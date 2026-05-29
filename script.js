@@ -207,6 +207,8 @@ if (hamburger && navLinks && overlay) {
     });
 }
 
+/* Previous Star Rating Code - Using data-value attribute for db or review.php
+
 // Review Section - Star Rating
 const starContainer = document.getElementById("starRating");
 const stars = starContainer.querySelectorAll("label");
@@ -229,6 +231,41 @@ stars.forEach((star) => {
         document.querySelector(`input#star${rating}`).checked = true;
     });
 });
+
+*/
+
+// Review Section - Star Rating
+const starContainer = document.querySelector(".starRating");
+
+if (starContainer) {
+    const stars = starContainer.querySelectorAll("label");
+    let selectedRating = 0;
+
+    stars.forEach((star) => {
+        const rating = parseInt(star.getAttribute("for").replace("star", ""));
+
+        star.addEventListener("mouseover", () => {
+            highlightStars(rating);
+        });
+
+        star.addEventListener("mouseout", () => {
+            highlightStars(selectedRating);
+        });
+
+        star.addEventListener("click", () => {
+            selectedRating = rating;
+            highlightStars(rating);
+            document.querySelector(`#star${rating}`).checked = true;
+        });
+    });
+
+    function highlightStars(rating) {
+        stars.forEach((star) => {
+            const current = parseInt(star.getAttribute("for").replace("star", ""));
+            star.style.color = current <= rating ? "#D2BC72" : "#E6E6E6";
+        });
+    }
+}
 
 function highlightStars(rating) {
     stars.forEach((star) => {

@@ -1,174 +1,220 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>BrewPointCafe | Reviews</title>
-		<link rel="icon" href="img/BLogo.jpg" type="image/x-icon">
-		<link rel="stylesheet" href="style.css">
-	</head>
 
-	<body>
-		<div class="nav">
-			<div class="navLogo">
-				<img class="logoW" src="img/BLogo.jpg">
-			</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BrewPointCafe | Reviews</title>
+	<link rel="icon" href="img/BLogo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+</head>
 
-			<div class="hamburger">&#9776;</div>
-
-			<div class="navLink">
-				<a href="index.html">Home</a>
-				<a href="about.html">About Us</a>
-				<a href="menu.html">Menu</a>
-				<a href="gallery.html">Gallery</a>
-				<a href="contact.html">Contact & Location</a>
-				<a class="active" href="review.html">Review</a>							 <!-- change to review.php for db-->
-			</div>
+<body>
+	<div class="nav">
+		<div class="navLogo">
+			<img class="logoW" src="img/BLogo.jpg">
 		</div>
 
-		<div class="navOverlay"></div>
+		<div class="hamburger">&#9776;</div>
 
-		<div class="reviewTitle"><h1>What our customers say</h1></div>
-
-		<div class="reviewCarouselContainer">
-			<button class="reviewPrevBtn">&#9664;</button>
-			<div class="reviewDisplay reviewSlidesWrapper">
-				<div class="slide active">
-
-					<div class="reviewPost">
-						<h3>John Doe</h3>
-						<p>
-							The coffee was amazing and the atmosphere was very relaxing.
-							Will definitely come back again!
-						</p>
-
-						<div class="starRating">
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#E6E6E6;">&#9733;</span>
-						</div>
-					</div>
-
-					<div class="reviewPost">
-						<h3>Jane Smith</h3>
-
-						<p>
-							Friendly staff and great drinks.
-							I highly recommend their iced coffee.
-						</p>
-
-						<div class="starRating">
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-						</div>
-					</div>
-
-					<div class="reviewPost">
-						<h3>Michael Lee</h3>
-
-						<p>
-							Nice ambiance and affordable prices.
-							Perfect place to study and relax.
-						</p>
-
-						<div class="starRating">
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#D2BC72;">&#9733;</span>
-							<span style="color:#E6E6E6;">&#9733;</span>
-							<span style="color:#E6E6E6;">&#9733;</span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<button class="reviewNextBtn">&#9654;</button>
+		<div class="navLink">
+			<a href="index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="menu.html">Menu</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact & Location</a>
+			<a class="active" href="review.html">Review</a> <!-- change to review.php for db-->
 		</div>
+	</div>
 
-		<div class="line"></div>
+	<div class="navOverlay"></div>
 
-		<div class="reviewBox">
-			<h2>Tell others what you think</h2>
-			<h3>How would you rate your overall experience?</h3>
-			<form>
-				<div class="reviewForm">
+	<div class="reviewTitle">
+		<h1>What our customers say</h1>
+	</div>
+
+	<div class="reviewCarouselContainer">
+		<button class="reviewPrevBtn">&#9664;</button>
+		<div class="reviewDisplay reviewSlidesWrapper">
+			<div class="slide active">
+
+				<div class="reviewPost">
+					<h3>John Doe</h3>
+					<p>
+						The coffee was amazing and the atmosphere was very relaxing.
+						Will definitely come back again!
+					</p>
+
 					<div class="starRating">
-						<input type="radio" id="star5" name="rate" value="5" required />
-						<label for="star5">&#9733;</label>
-
-						<input type="radio" id="star4" name="rate" value="4" />
-						<label for="star4">&#9733;</label>
-
-						<input type="radio" id="star3" name="rate" value="3" />
-						<label for="star3">&#9733;</label>
-
-						<input type="radio" id="star2" name="rate" value="2" />
-						<label for="star2">&#9733;</label>
-
-						<input type="radio" id="star1" name="rate" value="1" />
-						<label for="star1">&#9733;</label>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#E6E6E6;">&#9733;</span>
 					</div>
-
-					<input type="text" name="Name" placeholder="Name" required><br>
-
-					<textarea
-						name="message"
-						rows="9"
-						placeholder="Describe your experience"></textarea>
-
-					<button type="submit">Submit</button>
-				</div>
-			</form>
-		</div>
-
-		<div class="footlink">
-			<div class="footContainer">
-				<div>
-					<img class="logoB" src="img/BLogo.jpg">
 				</div>
 
-				<div class="footContact">
-					<h2>Contact Us</h2>
-					<p>brewpointcafe23@gmail.com</p>
+				<div class="reviewPost">
+					<h3>Jane Smith</h3>
+
+					<p>
+						Friendly staff and great drinks.
+						I highly recommend their iced coffee.
+					</p>
+
+					<div class="starRating">
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+					</div>
 				</div>
 
-				<div class="footSocial">
+				<div class="reviewPost">
+					<h3>Michael Lee</h3>
 
-					<h2>Follow Us</h2>
+					<p>
+						Nice ambiance and affordable prices.
+						Perfect place to study and relax.
+					</p>
 
-					<a href="https://www.facebook.com/ILoveBrewPointCafe" target="_blank">
-						<img src="img/FBW.png">
-					</a>
-
-					<a href="https://www.instagram.com/brewpointcafe" target="_blank">
-						<img src="img/IGW.png">
-					</a>
-
-				</div>
-
-				<div class="footNav">
-					<h2>Navigate:</h2>
-
-					<a class="footlink2" href="index.html">Home</a><br><br>
-					<a class="footlink2" href="about.html">About Us</a><br><br>
-					<a class="footlink2" href="menu.html">Menu</a><br><br>
-					<a class="footlink2" href="gallery.html">Gallery</a><br><br>
-					<a class="footlink2" href="contact.html">Contact & Location</a><br><br>
-					<a class="footlink2" href="review.html">Review</a><br><br>							 <!-- change to review.php for db-->
+					<div class="starRating">
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#E6E6E6;">&#9733;</span>
+						<span style="color:#E6E6E6;">&#9733;</span>
+					</div>
 				</div>
 			</div>
 
-			<footer>
-				<center>&copy; 2025 BrewPointCafe. All rights reserved. | Developed by: Mickyla Martinez & Aljoseph Dimaandal
-				</center>
-			</footer>
+			<div class="slide">
+				<div class="reviewPost">
+					<h3>Alex</h3>
+					<p>
+						Highly recommend to all coffee lovers out there.
+					</p>
+
+					<div class="starRating">
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+					</div>
+				</div>
+
+				<div class="reviewPost">
+					<h3>Daniel Caspe</h3>
+					<p>
+					</p>
+
+					<div class="starRating">
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#E6E6E6;">&#9733;</span>
+						<span style="color:#E6E6E6;">&#9733;</span>
+						<span style="color:#E6E6E6;">&#9733;</span>
+					</div>
+				</div>
+				<div class="reviewPost">
+					<h3>Michael Cruz</h3>
+					<p>
+					</p>
+
+					<div class="starRating">
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+						<span style="color:#D2BC72;">&#9733;</span>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<script src="script.js"></script>
-	</body>
+		<button class="reviewNextBtn">&#9654;</button>
+	</div>
+
+	<div class="line"></div>
+
+	<div class="reviewBox">
+		<h2>Tell others what you think</h2>
+		<h3>How would you rate your overall experience?</h3>
+		<form>
+			<div class="reviewForm">
+				<div class="starRating">
+					<input type="radio" id="star5" name="rate" value="5" required />
+					<label for="star5">&#9733;</label>
+
+					<input type="radio" id="star4" name="rate" value="4" />
+					<label for="star4">&#9733;</label>
+
+					<input type="radio" id="star3" name="rate" value="3" />
+					<label for="star3">&#9733;</label>
+
+					<input type="radio" id="star2" name="rate" value="2" />
+					<label for="star2">&#9733;</label>
+
+					<input type="radio" id="star1" name="rate" value="1" />
+					<label for="star1">&#9733;</label>
+				</div>
+
+				<input type="text" name="Name" placeholder="Name" required><br>
+
+				<textarea name="message" rows="9" placeholder="Describe your experience"></textarea>
+
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="footlink">
+		<div class="footContainer">
+			<div>
+				<img class="logoB" src="img/BLogo.jpg">
+			</div>
+
+			<div class="footContact">
+				<h2>Contact Us</h2>
+				<p>brewpointcafe23@gmail.com</p>
+			</div>
+
+			<div class="footSocial">
+
+				<h2>Follow Us</h2>
+
+				<a href="https://www.facebook.com/ILoveBrewPointCafe" target="_blank">
+					<img src="img/FBW.png">
+				</a>
+
+				<a href="https://www.instagram.com/brewpointcafe" target="_blank">
+					<img src="img/IGW.png">
+				</a>
+
+			</div>
+
+			<div class="footNav">
+				<h2>Navigate:</h2>
+
+				<a class="footlink2" href="index.html">Home</a><br><br>
+				<a class="footlink2" href="about.html">About Us</a><br><br>
+				<a class="footlink2" href="menu.html">Menu</a><br><br>
+				<a class="footlink2" href="gallery.html">Gallery</a><br><br>
+				<a class="footlink2" href="contact.html">Contact & Location</a><br><br>
+				<a class="footlink2" href="review.html">Review</a><br><br> <!-- change to review.php for db-->
+			</div>
+		</div>
+
+		<footer>
+			<center>&copy; 2025 BrewPointCafe. All rights reserved. | Developed by: Mickyla Martinez & Aljoseph
+				Dimaandal
+			</center>
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
 </html>
