@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BrewPointCafe | Gallery</title>
+		<link rel="icon" href="img\BLogo.jpg" type="image/x-icon">
+		<link rel = "stylesheet" href = "style.css">
+	</head>
+
+	<body>
+		<div class="nav">
+			<div class = "navLogo">
+				<img class="logoW" src="img\BLogo.jpg">
+			</div>
+			
+			<div class="hamburger">&#9776;</div> 
+			
+			<div class="navLink">
+					<a href="index.html">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="menu.html">Menu</a>
+					<a class="active"  href="gallery.html">Gallery</a>
+					<a href="contact.html">Contact & Location</a>
+					<a href="review.html">Review</a>							 <!-- change to review.php for db-->
+			</div>
+		</div>
+		
+		<div class="navOverlay"></div>
+		
+		<div class="bannerGallery">
+			<img src="img\BannerGallery.jpg">
+			<div class="bannerOverlay">
+				<h1>Shop's </br>Gallery</h1>
+			</div>
+		</div>
+		
+		<div class="galleryAlbum">
+			<div class="galleryAlbum1">
+				<img class="image" src="Gallery/Gallery1.jpg"> 
+				<img class="image" src="Gallery/Gallery2.jpg">
+				<img class="image" src="Gallery/Gallery3.jpg">
+				<img class="image" src="Gallery/Gallery4.jpg">
+				<img class="image" src="Gallery/Gallery5.jpg">
+				<img class="image" src="Gallery/Gallery6.jpg">
+				<img class="image" src="Gallery/Gallery7.jpg">
+				<img class="image" src="Gallery/Gallery8.jpg">	
+				<div class="galleryAlbumExtra">
+				  <img class="image" src="Gallery/Gallery9.jpg">
+				  <img class="image" src="Gallery/Gallery10.jpg">
+				  <img class="image" src="Gallery/Gallery11.jpg">
+				  <img class="image" src="Gallery/Gallery12.webp">
+				  <img class="image" src="Gallery/Gallery13.jpg">
+				  <img class="image" src="Gallery/Gallery14.jpg">
+				  <img class="image" src="Gallery/Gallery15.jpg">
+				  <img class="image" src="Gallery/Gallery16.jpg">
+				</div>
+			</div>
+		</div>
+		
+		<button class="viewMoreBut" onclick="viewMore()">View More</button>
+		
+		<div class="imageClicked">
+		    <span class="closeBtn">&times;</span>
+			<img class="image" src="Gallery/Gallery1.jpg">
+		</div>
+		
+		<div class="footlink">
+			<div class="footContainer">
+				
+				<div>
+					<img class="logoB" src="img\BLogo.jpg">
+				</div>
+
+				<div class="footContact">
+					<h2>Contact Us</h2>
+        			<p>brewpointcafe23@gmail.com</p>
+				</div>
+
+				<div class="footSocial">
+					<h2>Follow Us</h2>
+					<a href="https://www.facebook.com/ILoveBrewPointCafe" target="_blank">
+						<img src="img/FBW.png">
+					</a>
+					<a href="https://www.instagram.com/brewpointcafe" target="_blank">
+						<img src="img/IGW.png">
+					</a>
+				</div>
+
+				<div class="footNav">
+					<a class="footlink2" href="index.html">Home</a><br><br>
+					<a class="footlink2" href="about.html">About Us</a><br><br>
+					<a class="footlink2" href="menu.html">Menu</a><br><br>
+					<a class="footlink2" href="gallery.html">Gallery</a><br><br>
+					<a class="footlink2" href="contact.html">Contact & Location</a><br><br>
+					<a class="footlink2" href="review.html">Review</a><br><br>							 <!-- change to review.php for db-->
+				</div>
+			</div>
+			<button class="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+			<footer>
+				<center>&copy; 2025 BrewPointCafe. All rights reserved. | Developed by: Mickyla Martinez & Aljoseph Dimaandal</center>
+			</footer>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</HTML>
